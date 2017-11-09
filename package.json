@@ -31,27 +31,27 @@
     "author": "Zander Martineau",
     "license": "MIT",
     "dependencies": {
-        "axios": "^0.16.2",
-        "design-system-utils": "^0.2.1",
-        "emotion": "^8.0.6",
-        "emotion-server": "^8.0.6",
-        "next": "^4.0.3",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0",
-        "react-emotion": "^8.0.6",
+        "axios": "^0.17.0",
+        "design-system-utils": "^0.7.0",
+        "emotion": "^8.0.10",
+        "emotion-server": "^8.0.10",
+        "next": "^4.1.4",
+        "react": "^16.1.0",
+        "react-dom": "^16.1.0",
+        "react-emotion": "^8.0.10",
         "xkcd": "^1.1.2"
     },
     "devDependencies": {
-        "babel-plugin-emotion": "^8.0.6",
-        "babel-plugin-inline-react-svg": "^0.4.0",
-        "enzyme": "^3.1.0",
-        "enzyme-to-json": "^3.1.2",
-        "eslint": "^4.5.0",
+        "babel-plugin-emotion": "^8.0.10",
+        "babel-plugin-inline-react-svg": "^0.5.1",
+        "enzyme": "^3.1.1",
+        "enzyme-to-json": "^3.2.2",
+        "eslint": "^4.10.0",
         "husky": "^0.14.3",
         "jest": "^21.2.1",
         "lint-staged": "^4.0.4",
-        "prettier": "^1.5.3",
+        "prettier": "^1.8.2",
         "prettier-standard": "^7.0.1",
-        "react-test-renderer": "^16.0.0"
+        "react-test-renderer": "^16.1.0"
     }
 }
