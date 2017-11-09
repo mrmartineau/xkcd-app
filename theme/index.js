@@ -2,19 +2,13 @@ import DesignSystem from 'design-system-utils'
 import colorPalette from './colorPalette'
 
 export const theme = {
-  breakpoints: [
-    32, 48, 64
-  ],
-  space: [
-    0, 6, 12, 18, 24
-  ],
-  fontSizes: [
-    12, 16, 18, 24, 36, 72
-  ],
+  breakpoints: [32, 48, 64],
+  space: [0, 6, 12, 18, 24],
+  fontSizes: [12, 16, 18, 24, 36, 72],
   colors: {
     black: '#111',
     blue: '#07c',
-  }
+  },
 }
 
 export const myDesignSystem = {
@@ -104,9 +98,11 @@ export const myDesignSystem = {
   borderRadius: '0.3em',
 
   border: {
-    default: '1px solid #ddd'
-  }
+    default: '1px solid #ddd',
+  },
 }
 
-export const ds = new DesignSystem(myDesignSystem)
-
+export const ds = new DesignSystem(myDesignSystem, {
+  useModularScale: true,
+  fontSizeUnit: 'rem',
+})
