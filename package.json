@@ -1,57 +1,61 @@
 {
-    "name": "xkcd-app",
-    "version": "0.0.0",
-    "description": "XKCD app",
-    "main": "index.js",
-    "scripts": {
-        "dev": "next",
-        "build": "next build",
-        "start": "next start",
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage",
-        "format:js": "prettier-standard 'components/**/*.js' 'pages/**/*.js' 'layouts/**/*.js'",
-        "lint:js": "standard",
-        "precommit": "lint-staged"
-    },
-    "lint-staged": {
-        "linters": {
-            "(components|pages)/**/*.js": [
-                "prettier-standard",
-                "test",
-                "git add"
-            ]
-        }
-    },
-    "keywords": [
-        "react",
-        "react.js",
-        "next.js"
-    ],
-    "author": "Zander Martineau",
-    "license": "MIT",
-    "dependencies": {
-        "axios": "^0.17.0",
-        "design-system-utils": "^0.7.0",
-        "emotion": "^8.0.10",
-        "emotion-server": "^8.0.10",
-        "next": "^4.1.4",
-        "react": "^16.1.0",
-        "react-dom": "^16.1.0",
-        "react-emotion": "^8.0.10",
-        "xkcd": "^1.1.2"
-    },
-    "devDependencies": {
-        "babel-plugin-emotion": "^8.0.10",
-        "babel-plugin-inline-react-svg": "^0.5.1",
-        "enzyme": "^3.1.1",
-        "enzyme-to-json": "^3.2.2",
-        "eslint": "^4.10.0",
-        "husky": "^0.14.3",
-        "jest": "^21.2.1",
-        "lint-staged": "^4.0.4",
-        "prettier": "^1.8.2",
-        "prettier-standard": "^7.0.1",
-        "react-test-renderer": "^16.1.0"
+  "name": "xkcd-app",
+  "version": "0.0.0",
+  "description": "XKCD app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "format:js": "prettier-standard 'components/**/*.js' 'pages/**/*.js' 'layouts/**/*.js'",
+    "lint:js": "standard",
+    "precommit": "lint-staged",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "lint-staged": {
+    "linters": {
+      "(components|pages)/**/*.js": [
+        "prettier-standard",
+        "test",
+        "git add"
+      ]
     }
+  },
+  "keywords": [
+    "react",
+    "react.js",
+    "next.js"
+  ],
+  "author": "Zander Martineau",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "design-system-utils": "^0.7.0",
+    "emotion": "^8.0.10",
+    "emotion-server": "^8.0.10",
+    "next": "^4.1.4",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-emotion": "^8.0.10",
+    "xkcd": "^1.1.2",
+    "snyk": "^1.85.0"
+  },
+  "devDependencies": {
+    "babel-plugin-emotion": "^8.0.10",
+    "babel-plugin-inline-react-svg": "^0.5.1",
+    "enzyme": "^3.1.1",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "^4.10.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^4.0.4",
+    "prettier": "^1.8.2",
+    "prettier-standard": "^7.0.1",
+    "react-test-renderer": "^16.1.0"
+  },
+  "snyk": true
 }
