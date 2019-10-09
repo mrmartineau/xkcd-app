@@ -35,7 +35,7 @@
         "design-system-utils": "^0.7.0",
         "emotion": "^8.0.10",
         "emotion-server": "^8.0.10",
-        "next": "^4.1.4",
+        "next": "^5.0.0",
         "react": "^16.1.0",
         "react-dom": "^16.1.0",
         "react-emotion": "^8.0.10",
